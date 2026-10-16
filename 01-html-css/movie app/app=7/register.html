@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Please fill out the form completely.</h1>
+    <hr />
+
+    <table>
+      <h2>Account Informations</h2>
+      <tr>
+        <td style="width: 120px">
+          <label for="UserName">UserName:</label>
+        </td>
+        <td>
+          <input type="text" id="UserName" placeholder="write   username" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="email">Email:</label>
+        </td>
+        <td>
+          <input type="email" id="email" placeholder="write   e-mail" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="password">Password:</label>
+        </td>
+
+        <td>
+          <input type="password" id="password" placeholder="write password" />
+        </td>
+      </tr>
+    </table>
+
+    <h2>User Informations</h2>
+    <table>
+      <tr>
+        <td style="width: 120px">
+          <label for="Name">Name:</label>
+        </td>
+        <td>
+          <input type="text" id="Name" placeholder="write name" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Surname">Surname:</label>
+        </td>
+        <td>
+          <input type="text" id="surname" placeholder="write surname" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="city">City:</label>
+        </td>
+        <td>
+          <select id="city">
+            <option value="00">Choose</option>
+            <option value="01">Adana</option>
+            <option value="06">Ankara</option>
+            <option value="35">Izmir</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="gender">Gender:</label>
+        </td>
+        <td>
+          <input type="radio" name="gender" />Woman
+          <input type="radio" name="gender" />Man
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="hobbies">Your Hobbies:</label>
+        </td>
+        <td>
+          <input type="checkbox" id="hobbies1" />
+          <label for="hobbies1">Watch TV</label>
+          <input type="checkbox" id="hobbies2" />
+          <label for="hobbies2">Play Video Games</label>
+          <input type="checkbox" id="hobbies3" />
+          <label for="hobbies3">Play football</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="submit">Save All</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

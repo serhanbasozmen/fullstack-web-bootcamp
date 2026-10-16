@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <form action="register.php">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="name">Surname</label>
+        <input type="text" id="surname" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+      <br /><br /><br /><br />
+      <div>
+        <label for="intro">Explain Yourself</label>
+        <textarea id="intro" rows="3" cols="40"></textarea>
+      </div>
+      <div>
+        <p>What is your favorite programming language ?</p>
+        <input type="radio" id="html" name="programming" />
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="programming" />
+        <label for="css">Css</label>
+        <input type="radio" id="Java" name="programming" />
+        <label for="Java">Java</label>
+      </div>
+
+      <div>
+        <p>Choose your favorite programming languages</p>
+        <input type="checkbox" id="html2" />
+        <label for="html2">HTML</label>
+        <input type="checkbox" id="css2" />
+        <label for="css2">Css</label>
+        <input type="checkbox" id="Java2" />
+        <label for="Java2">Java</label>
+      </div>
+
+      <div>
+        <label for="cities">Cities</label>
+        <select id="cities">
+          <option value="06">Ankara</option>
+          <option value="34">Istanbul</option>
+          <option value="10">Balikesir</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="emails">email</label>
+        <input type="email" id="emails" />
+      </div>
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" />
+      </div>
+
+      <button type="submit">Save All</button>
+      <button type="reset">Clear All</button>
+    </form>
+  </body>
+</html>
