@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css combinators</title>
+  </head>
+  <style>
+    /* div p {
+      background-color: yellow;
+    } */
+    /* div > p {
+      background-color: yellow;
+    } */
+    /* div + p {
+      background-color: yellow;
+    } */
+    div ~ p {
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <!-- Combinators -->
+
+    <!-- 1- Descendant Selector () -->
+    <!-- 2- Child Selector(>) -->
+    <!-- 3- Adjacent Sibling Selector(+) -->
+    <!-- 4- General Sibling Selector(~) -->
+
+    <p>1. paragraph</p>
+    <div>
+      <p>2.paragraph</p>
+      <p>3.paragraph</p>
+      <section>
+        <p>4.paragraph</p>
+      </section>
+    </div>
+    <p>5.paragraph</p>
+    <p>6.paragraph</p>
+  </body>
+</html>
