@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo classes</title>
+    <style>
+      a {
+        border: 1px solid darkgray;
+        padding: 5px 8px;
+        display: inline-block;
+        text-decoration: none;
+        width: 50px;
+        text-align: center;
+      }
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: rgb(4, 43, 102);
+        background-color: rgb(170, 32, 114);
+      }
+      a:active {
+        color: white;
+        background-color: blueviolet;
+      }
+      div:hover p {
+        background-color: tomato;
+        display: block;
+      }
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo Classes -->
+    <a href="padding.html">Home</a>
+    <a href="box-model.html">About</a>
+    <a href="css-combinators1.html">Style</a>
+    <br /><br />
+    <div>
+      click here!
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis unde
+        voluptate assumenda vero perferendis dolorem quam odit illum doloremque
+        neque iusto vel consequuntur, dicta deleniti commodi deserunt veritatis
+        dolores a.
+      </p>
+    </div>
+  </body>
+</html>
