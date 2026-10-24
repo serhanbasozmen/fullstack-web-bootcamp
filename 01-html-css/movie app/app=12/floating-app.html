@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>floating app</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        margin: 0;
+      }
+      header,
+      footer {
+        background-color: purple;
+        padding: 20px;
+        color: yellow;
+      }
+
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0;
+      }
+
+      .menu {
+        width: 25%;
+      }
+
+      .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #502064;
+        color: white;
+      }
+
+      .content {
+        width: 75%;
+      }
+      .menu li:hover {
+        cursor: pointer;
+        background-color: #8267be;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div><h1>Header</h1></div>
+    </header>
+
+    <main class="clearfix">
+      <div class="menu col">
+        <ul>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+      <div class="content col">
+        <h1>Web Development</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          laudantium sapiente quidem necessitatibus, commodi consequatur harum
+          reprehenderit officiis, earum ipsam nemo fuga? Amet temporibus vitae
+          iste, in rem optio. In?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ab
+          laborum cum unde quaerat reiciendis maiores illum, expedita vero et
+          fuga quos repellendus nobis nostrum veniam odio obcaecati inventore
+          eaque!
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div><h1>Footer</h1></div>
+    </footer>
+  </body>
+</html>
