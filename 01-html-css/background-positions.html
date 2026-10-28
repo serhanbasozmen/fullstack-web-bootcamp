@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background opacity</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #header {
+        position: relative;
+        background-color: aqua;
+        background-image:
+          /* linear-gradient(
+            to top left,
+            rgba(0, 0, 255, 0.4),
+            rgba(255, 255, 0, 0.4)
+          ), */ url(images/home-bg2.jpeg);
+        background-repeat: no-repeat;
+        height: 100vh;
+        /* background-size: contain; */
+        /* background-position: center; */
+      }
+      #header h1 {
+        margin: 0;
+        position: absolute;
+        font-size: 80px;
+        color: wheat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .logo {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>background text</h1>
+      <img class="logo" src="images/logothrash.png" alt="thrashlogo" />
+    </div>
+  </body>
+</html>
