@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Asap Sharp", sans-serif;
+}
+
+#showcase {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(196, 255, 249, 0.2),
+      rgba(123, 159, 156, 0.2)
+    ),
+    url(../../images/bg1231.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background: rgba(46, 76, 109, 0.3);
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+}
+#showcase h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  color: white;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+}
+
+.main-header {
+  background-color: #c4fff9;
+  padding: 8px 16px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 20px);
+  text-align: right;
+  font-family: "Outfit", sans-serif;
+}
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-nav__item {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.main-header__logo {
+  color: rgb(149, 109, 35);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: rgb(149, 109, 35);
+  font-weight: bold;
+}
+.main-nav__item a:hover {
+  color: #1f06ac;
+}
+.main-nav__item a:active {
+  color: rgba(218, 24, 176, 0.89);
+}
+.main-nav__item a::before {
+  content: "\2B24";
+  padding: 4px;
+  font-size: 10px;
+}
+
+.main-nav__login a::before {
+  content: none;
+}
+
+#how-it-works {
+  padding: 13px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 40px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col-4 {
+  float: left;
+  width: 25%;
+}
+.col-3 {
+  float: left;
+  width: 33.3%;
+}
+.col-2 {
+  float: left;
+  width: 50%;
+}
+.icon-box h3 {
+  color: #3e4555;
+  font-size: 24px;
+}
+.icon-box i {
+  color: rgb(149, 109, 35);
+}
+
+.features__left {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(196, 255, 249, 0.2),
+      rgba(123, 159, 156, 0.2)
+    ),
+    url(../../images/bga.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.features__right {
+  background-color: #edf5f7;
+  padding: 40px;
+  vertical-align: top;
+}
+
+.features__left,
+.features__right {
+  height: 350px;
+}
+
+.features__right h3 {
+  font-size: 30px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #3e4555;
+  font-size: 30px;
+}
+.plan {
+  text-align: center;
+  padding: 5px;
+}
+.plan__badge {
+  background-color: white;
+  color: #ffa62b;
+  padding: 8px;
+  border-radius: 5px;
+}
+.plan__features {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.plan--featured {
+  position: relative;
+  top: -20px;
+}
+.plan__features li {
+  margin: 6px 0px;
+}
+.recommended_plan {
+  color: white;
+  background-color: #023e8a !important;
+}
+.inner-plan {
+  background-color: #edf5f7;
+  padding: 25px 10px;
+  border-radius: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: box-shadow 0.3s;
+}
+.inner-plan:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.75) 0px 14px 28px,
+    rgba(0, 0, 0, 0.75) 0px 10px 10px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+#backtotop {
+  position: fixed;
+  bottom: 10px;
+  right: 1px;
+}
+#backtotop i {
+  font-size: 40px;
+  color: #f8e16c;
+  transition: color 0.4s;
+}
+#backtotop i:hover {
+  color: black;
+}
+
+.counter {
+  background: linear-gradient(to bottom, #c4fff9 0%, #1f06ac 100%);
+  text-align: center;
+  padding: 50px;
+}
+.counter__item {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+.counter h4 {
+  margin: 0;
+  color: white;
+}
