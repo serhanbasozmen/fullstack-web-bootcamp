@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css variables</title>
+    <style>
+      :root {
+        --babyblue: #bfe7ea;
+        --white: #fff;
+        --darkblue: #1f06ac;
+      }
+      body {
+        --babyblue: #97d7ff;
+        background-color: var(--babyblue);
+      }
+      h2 {
+        border-bottom: 2px solid var(--babyblue);
+      }
+
+      .container {
+        color: var(--darkblue);
+        background-color: var(--white);
+        padding: 20px;
+      }
+
+      button {
+        background-color: var(--white);
+        color: var(--darkblue);
+        border: 1px solid var(--darkblue);
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div class="container">
+      <h2>Lorem, ipsum dolor.</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        voluptas unde quidem, mollitia fugiat laudantium dolores iusto libero
+        quo quis animi hic. Hic est nam officiis repellat libero debitis magnam.
+      </p>
+
+      <div>
+        <button>Ok</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
