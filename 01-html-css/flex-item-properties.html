@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <style>
+      .container {
+        display: flex;
+
+        height: 500px;
+        background-color: #1f06ac;
+      }
+      .item {
+        background-color: #e3ef4f;
+        padding: 30px;
+        margin: 20px;
+        color: black;
+        font-size: 25px;
+
+        /* flex: 0 1 200px; */
+        /* grow shrink basis */
+      }
+      .item-1 {
+        order: 3;
+        flex: 25%;
+      }
+
+      .item-2 {
+        order: 2;
+        flex: 25%;
+      }
+
+      .item-3 {
+        order: 1;
+        flex: 50%;
+      }
+    </style>
+    <title>flex item properties</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+    </div>
+  </body>
+</html>

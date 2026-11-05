@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: aqua;
+      padding: 0px 20px;
+    }
+    nav a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+      align-self: center;
+      padding: 10px;
+    }
+
+    .navigation {
+      list-style: none;
+      display: flex;
+    }
+
+    .navigation a {
+      display: block;
+      padding: 13px;
+    }
+    .navigation a:hover {
+      background-color: #009999;
+    }
+
+    .navigation li:last-child {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        position: relative;
+        flex-direction: column;
+      }
+
+      nav a {
+        align-self: flex-start;
+      }
+
+      .navigation {
+        flex-direction: column;
+      }
+      .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(0, 102, 102, 0.4);
+        border-bottom: 1px solid rgba(179, 255, 255, 0.2);
+      }
+      .navigation li:last-child {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+
+      .responsive .navigation li:not(:last-child) {
+        display: none;
+      }
+      .navigation li:last-child {
+        border-bottom: none;
+      }
+    }
+  </style>
+  <body>
+    <nav class="responsive">
+      <a href="">Logo</a>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
