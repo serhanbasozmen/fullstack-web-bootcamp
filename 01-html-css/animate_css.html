@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      div {
+        width: 300px;
+        height: 200px;
+        background-color: blueviolet;
+      }
+      .element {
+        background-color: yellow;
+        animation: bounceOutDown;
+        animation-duration: 1s;
+      }
+      .animate__animated.animate__backInRight {
+        --animate-duration: 2s;
+      }
+
+      :root {
+        --animation-duration: 600ms;
+        --animation-delay: 0.5s;
+      }
+    </style>
+    <title>animate css</title>
+  </head>
+  <body>
+    <h1 class="animate__animated animate__fadeInDownBig">
+      An animated element
+    </h1>
+    <div
+      class="animate__animated animate__backInRight animate__delay-3s animate__infinite"
+    ></div>
+    <div class="element"></div>
+  </body>
+</html>
