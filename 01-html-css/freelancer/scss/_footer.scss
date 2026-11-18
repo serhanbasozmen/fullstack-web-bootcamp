@@ -1,0 +1,37 @@
+@use "variables";
+
+#main-footer {
+  background-color: variables.$dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    .social {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .fa-brands {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.6rem;
+      transition: all 0.6s;
+
+      &:hover {
+        background-color: variables.$primary-color;
+      }
+    }
+  }
+}
